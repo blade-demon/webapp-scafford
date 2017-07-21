@@ -9,7 +9,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var waitSeconds = function waitSeconds(time) {
   return new _promise2.default(function (resolve, reject) {
-    console.log("doing");
+    console.log("This is a async test.");
     return setTimeout(function () {
       resolve();
     }, time);
@@ -28,6 +28,8 @@ var waitSeconds = function waitSeconds() {
 };
 
 waitSeconds();
+
+
 },{"babel-runtime/core-js/promise":2}],2:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/promise"), __esModule: true };
 },{"core-js/library/fn/promise":3}],3:[function(require,module,exports){

@@ -1,6 +1,6 @@
 let waitSeconds = (time) => {
   return new Promise((resolve, reject) => {
-    console.log("doing");
+    console.log("This is a async test..");
     return setTimeout(()=>{
       resolve();
     },time)
