@@ -4,10 +4,18 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Document
-    link(href="./css/all.css", rel="stylesheet")
+    title Demo
+    link(rel="stylesheet", href="css/vendors.css")
+    link(rel="stylesheet", href="css/bundle.css")
     
   body
-    p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-    script(src="./js/vendors.js")
-    script(src="./js/index.js")
+    .container
+      .row
+        p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      .row
+        .col-md-6
+          button.btn.btn-large.btn-block.btn-success button1
+        .col-md-6
+          button.btn.btn-large.btn-block.btn-success button2
+    script(type="text/javascript" src="js/vendors.js")
+    script(type="text/javascript" src="js/bundle.js")

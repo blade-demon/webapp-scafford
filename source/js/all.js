@@ -12,3 +12,5 @@ let waitSeconds = (time) => {
   await waitSeconds(3000);
   console.log("end");
 })();
+
+// console.log("This is js file 1.");

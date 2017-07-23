@@ -4,12 +4,25 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link href="./css/all.css" rel="stylesheet"/>
+    <title>Demo</title>
+    <link rel="stylesheet" href="css/vendors.css"/>
+    <link rel="stylesheet" href="css/bundle.css"/>
   </head>
   <body>
-    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/index.js"></script>
+    <div class="container">
+      <div class="row">
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-large btn-block btn-success">button1</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-large btn-block btn-success">button2</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/vendors.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
   </body>
 </html>

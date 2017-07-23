@@ -1,6 +1,1 @@
-let waitSeconds = () => {
-  // alert("all2.js");
-}
-
-waitSeconds();
-
+console.log("This is js file 2.");

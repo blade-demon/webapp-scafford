@@ -1,0 +1,1 @@
+{"version":3,"sources":["bundle.css"],"names":[],"mappings":"AAEA,KACE,MAAA,KAGF,MACE,kBAAA,eAAA,UAAA,eAEA,eAAA,UAAA,OAAA","file":"bundle.css","sourcesContent":["$primary-color: black;\r\n\r\nbody {\r\n  color: $primary-color;\r\n}\r\n\r\n.card {\r\n  transform: rotate(120deg);\r\n  // -webkit-transform: rotate(90deg);\r\n  filter: blur(3px);\r\n}"]}
