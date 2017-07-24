@@ -113,7 +113,7 @@ gulp.task('vendorCSS', function () {
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('serve:dev', function () {
+gulp.task('serve:dev', ['vendorJS', 'vendorCSS'], function () {
   browserSync.init({ server: { baseDir: "dist" } });
   // Watch the files in the source folder.
   gulp.watch('source/**/*.html', ['copyHTML']);
@@ -127,4 +127,4 @@ gulp.task('serve:dev', function () {
 });
 
 // Initial files
-gulp.task('default', ['copyHTML', 'jade', 'sass', 'bower', 'compressJS', 'vendorJS', 'vendorCSS']);
+gulp.task('default', ['copyHTML', 'jade', 'sass', 'bower', 'compressJS']);

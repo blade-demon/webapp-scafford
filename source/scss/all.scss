@@ -6,6 +6,6 @@ body {
 
 .card {
   transform: rotate(120deg);
-  // -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
   filter: blur(3px);
 }
