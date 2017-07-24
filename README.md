@@ -5,7 +5,7 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
   - npm install
   - bower install
   - gulp
-  - gulp serve:dev
+  - npm run dev
   
 ## 2. 脚手架功能及简述, 使用gulp工具构建工作流：
   #### 1. 将source文件夹的html文件copy到dist文件夹下
