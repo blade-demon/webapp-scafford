@@ -1,5 +1,6 @@
 .tmp
 bower_components
+dist
 node_modules
 .c9
 .idea
