@@ -16,8 +16,6 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
   #### 6. jquery和bootstrap通过bower安装，并使用gulp将js,css 文件copy到.tmp文件夹下，然后再压缩js文件，将js和css文件copy到dist/js和dist/css文件夹下面。
   #### 7. gulp serve:dev 监听html，jade, js，sass文件的变化自动刷新页面。
 
-
-
 ## 3. 框架存在问题
   #### 1. gulpfile.js文件不能跟随文件自身的修改而刷新。
   #### 2. vendors的文件的注入顺序有可能存在问题。
