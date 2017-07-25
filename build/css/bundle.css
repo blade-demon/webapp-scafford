@@ -1,0 +1,10 @@
+body {
+  color: black; }
+
+.card {
+  transform: rotate(120deg);
+  -webkit-transform: rotate(90deg);
+  -webkit-filter: blur(3px);
+          filter: blur(3px); }
+
+/*# sourceMappingURL=bundle.css.map */

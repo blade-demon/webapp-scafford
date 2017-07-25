@@ -19,3 +19,16 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
 ## 3. 框架存在问题
   #### 1. gulpfile.js文件不能跟随文件自身的修改而刷新。
   #### 2. vendors的文件的注入顺序有可能存在问题。
+
+
+- develop
+  - js
+    - console
+    - 不压缩
+  -css
+    - 不压缩  
+- production
+  - js    
+    - 放弃console.log(), 压缩文件
+  - css, html
+    - 压缩

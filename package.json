@@ -5,21 +5,34 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp serve:dev"
+    "dev": "gulp && gulp serve:dev",
+    "dist": "gulp --env=production && gulp serve:dist --env=production"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
   },
   "author": "ziwei",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^7.1.2",
+    "babel-eslint": "^7.2.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.12",
     "browserify": "^14.4.0",
+    "eslint": "^4.3.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-browserify": "^0.5.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
     "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-main-bower-files": "^1.6.2",
@@ -29,6 +42,7 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
