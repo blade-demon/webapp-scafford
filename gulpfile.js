@@ -25,7 +25,7 @@ gulp.task("copyHTML", function () {
 
 // Clean .tmp and build folder
 gulp.task("clean", function() {
-  return gulp.src([".tmp", "build"], {read: false})
+  return gulp.src([".tmp", "build", ".publish"], {read: false})
     .pipe($.clean());
 });
 
@@ -86,8 +86,16 @@ gulp.task("sass", function () {
 gulp.task("imagemin", function() {
   return gulp.src("src/img/*")
     .pipe($.if(options.env === "production", $.imagemin()))
-    .pipe(gulp.dest("dist/img"));
+    .pipe(gulp.dest("build/img"));
 });
+
+// Copy favicon.ico file
+gulp.task("copyFavicon", function() {
+  return gulp.src("src/favicon.ico")
+    .pipe($.if(options.env === "production", $.imagemin()))
+    .pipe(gulp.dest("build"));
+});
+
 
 // Tansfer js files from ES6 to ES5 with Babel
 gulp.task("babel", function () {
@@ -207,4 +215,10 @@ gulp.task("serve:dist", ["vendorJS", "vendorCSS", "compressJS"], function () {
 });
 
 // Initial files
-gulp.task("default", $.sequence("clean", "copyHTML", "jade", "sass", "bower", "eslint", "imagemin"));
+gulp.task("default", $.sequence("clean", "copyHTML", "jade", "sass", "bower", "eslint", "imagemin", "copyFavicon"));
+
+// Define a deploy task in your gulpfile.js (as below) which can be used to push to gh-pages going forward.
+gulp.task("deploy", function() {
+  return gulp.src("build/**/*")
+    .pipe($.ghPages());
+});
