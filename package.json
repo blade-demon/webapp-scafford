@@ -1,8 +1,7 @@
 {
   "name": "webapp-scafford",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "This is a webapp scafford for quickly development and deployment.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp && gulp serve:dev",

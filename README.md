@@ -1,5 +1,5 @@
 # webapp-scafford
-Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚手架。
+Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚手架, 可以使用ES6，ES7d的最新功能。
 
 ## 使用方法
 ```
