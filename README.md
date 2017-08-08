@@ -29,3 +29,12 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
       - 放弃console.log(), 压缩文件
     - css, html
       - 压缩
+
+##压缩前后比较
+   result_test文件夹内的压缩文件是两个版本的部署文件
+   ###  未压缩前的文件
+   ![image](https://github.com/blade-demon/webapp-scafford/result_test/dev.jpg)
+   
+   ###  压缩优化后的文件
+   ![image](https://github.com/blade-demon/webapp-scafford/result_test/prod.jpg)
+   
