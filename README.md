@@ -12,7 +12,7 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
   #### 1. 将source文件夹的html文件copy到dist文件夹下
   #### 2. 将source文件夹的jade文件转换成html文件copy到dist文件夹下面
   #### 3. 使用Babel将source/js文件夹的ES6 Javascript文件转换成ES5文件夹下面
-  #### 4. 使用browserify将ES5文件转换成前端浏览器可执行的JS文件，解决require的问题
+  #### 4. 使用browserify将ES6文件转换成前端浏览器可执行的JS文件，解决require的问题
   #### 5. 将source/scss文件夹下面的sass文件转换成css文件，并使用autoprefixer使css对各种浏览器的更新更加完善
   #### 6. jquery和bootstrap通过bower安装，并使用gulp将js,css 文件copy到.tmp文件夹下，然后再压缩js文件，将js和css文件copy到dist/js和dist/css文件夹下面。
   #### 7. gulp serve:dev 监听html，jade, js，sass文件的变化自动刷新页面。
@@ -29,12 +29,3 @@ Webapp开发脚手架，使用gulp，babel, browserify搭建的前端开发脚�
       - 放弃console.log(), 压缩文件
     - css, html
       - 压缩
-
-##压缩前后比较
-   result_test文件夹内的压缩文件是两个版本的部署文件
-   ###  未压缩前的文件
-   ![image](https://raw.githubusercontent.com/blade-demon/webapp-scafford/master/result_test/dev.jpg)
-   
-   ###  压缩优化后的文件
-   ![image](https://raw.githubusercontent.com/blade-demon/webapp-scafford/master/result_test/prod.jpg)
-   
