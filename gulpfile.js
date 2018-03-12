@@ -8,7 +8,7 @@ var buffer = require("vinyl-buffer");
 var source = require("vinyl-source-stream");
 var browserSync = require("browser-sync").create();
 var minimist = require("minimist");
-var cleanCSS = require("gulp-clean-css");
+// var cleanCSS = require("gulp-clean-css");
 
 var envOptions = {
   string: "env",
@@ -77,7 +77,7 @@ gulp.task("sass", function () {
     .pipe($.plumber())
     .pipe($.sass().on("error", $.sass.logError))
     .pipe($.postcss(plugins))
-    .pipe($.if(options.env === "production", cleanCSS()))
+    .pipe($.if(options.env === "production", $.cleanCss()))
     .pipe($.sourcemaps.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
@@ -173,7 +173,7 @@ gulp.task("vendorJS", function () {
 gulp.task("vendorCSS", function () {
   return gulp.src(".tmp/vendors/**/*.css")
     .pipe($.concat("vendors.css"))
-    .pipe($.if(options.env === "production", cleanCSS()))
+    .pipe($.if(options.env === "production", $.cleanCss()))
     .pipe(gulp.dest("build/css"));
 });
 
