@@ -8,7 +8,6 @@ var buffer = require("vinyl-buffer");
 var source = require("vinyl-source-stream");
 var browserSync = require("browser-sync").create();
 var minimist = require("minimist");
-// var cleanCSS = require("gulp-clean-css");
 
 var envOptions = {
   string: "env",
